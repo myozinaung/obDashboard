@@ -1,3 +1,6 @@
+openbridge-web-components
+SEE LICENSE IN license.txt
+
 zone.js
 MIT
 The MIT License

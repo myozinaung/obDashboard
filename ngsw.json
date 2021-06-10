@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1623348598614,
+  "timestamp": 1623352737154,
   "index": "/obDashboard/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/obDashboard/favicon.ico",
         "/obDashboard/index.html",
-        "/obDashboard/main.f16fa5d157b9320516f6.js",
+        "/obDashboard/main.9f1a3783433c9e6fcb76.js",
         "/obDashboard/manifest.webmanifest",
         "/obDashboard/polyfills.4a7730727dd548569225.js",
         "/obDashboard/runtime.0b8dedb9f86f4b7aa0f8.js",
-        "/obDashboard/styles.31d6cfe0d16ae931b73c.css"
+        "/obDashboard/styles.89de0b2b206f2f95b5a8.css"
       ],
       "patterns": []
     },
@@ -29,6 +29,12 @@
         "ignoreVary": true
       },
       "urls": [
+        "/obDashboard/assets/icons/alert-icon.svg",
+        "/obDashboard/assets/icons/apps-icon.svg",
+        "/obDashboard/assets/icons/bright-icon.svg",
+        "/obDashboard/assets/icons/day-icon.svg",
+        "/obDashboard/assets/icons/dimming-icon.svg",
+        "/obDashboard/assets/icons/dusk-icon.svg",
         "/obDashboard/assets/icons/icon-128x128.png",
         "/obDashboard/assets/icons/icon-144x144.png",
         "/obDashboard/assets/icons/icon-152x152.png",
@@ -36,13 +42,22 @@
         "/obDashboard/assets/icons/icon-384x384.png",
         "/obDashboard/assets/icons/icon-512x512.png",
         "/obDashboard/assets/icons/icon-72x72.png",
-        "/obDashboard/assets/icons/icon-96x96.png"
+        "/obDashboard/assets/icons/icon-96x96.png",
+        "/obDashboard/assets/icons/nav-menu-icon.svg",
+        "/obDashboard/assets/icons/night-icon.svg",
+        "/obDashboard/assets/icons/user-icon.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
+    "/obDashboard/assets/icons/alert-icon.svg": "c88066fded427f2ff171bd979d7e6c6a3e95422b",
+    "/obDashboard/assets/icons/apps-icon.svg": "430ff58f4508f2ea6d11e5568176ded580de3ee9",
+    "/obDashboard/assets/icons/bright-icon.svg": "4b4c6ea1fed2bcd05f2b637041cd0443179c425c",
+    "/obDashboard/assets/icons/day-icon.svg": "365833b1f3645ec336abdde9cfbaab6f7ac9f72c",
+    "/obDashboard/assets/icons/dimming-icon.svg": "8ff0d0ba32c5a6a5b380b5b6ffd7639ced156d1b",
+    "/obDashboard/assets/icons/dusk-icon.svg": "8d082cc5dc5cce44b5160bf12b73d31fd4a002b4",
     "/obDashboard/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/obDashboard/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/obDashboard/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -51,13 +66,16 @@
     "/obDashboard/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/obDashboard/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/obDashboard/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/obDashboard/assets/icons/nav-menu-icon.svg": "b330d6c4806dcd8023cd49188988e08796daaab8",
+    "/obDashboard/assets/icons/night-icon.svg": "399b48f48941aeac8f4a81e9f5fc3afcfef621ac",
+    "/obDashboard/assets/icons/user-icon.svg": "82a4fab0eaeb8b88562b23a3ecc04af356c40c31",
     "/obDashboard/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/obDashboard/index.html": "47d229e275ffd9195fb8d7ed26d360cb5b648b4f",
-    "/obDashboard/main.f16fa5d157b9320516f6.js": "cf6b26c57d1a065ca446be751a587b56fbeb33ee",
-    "/obDashboard/manifest.webmanifest": "b28965cf4a92493afa07d60c34e6f7d407ce066c",
+    "/obDashboard/index.html": "c4aca97b894a6b685b433bf74894cebbbbc23c17",
+    "/obDashboard/main.9f1a3783433c9e6fcb76.js": "03ec50c22b967c2395fe7f759112d665505feb6b",
+    "/obDashboard/manifest.webmanifest": "fc75bf44dcec874945af0f885613766807f78af9",
     "/obDashboard/polyfills.4a7730727dd548569225.js": "69d5be86c33ba0cff84f469a1821d5359eb11946",
     "/obDashboard/runtime.0b8dedb9f86f4b7aa0f8.js": "7d340400c043eabfde972bb63adc57848d79f8ff",
-    "/obDashboard/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/obDashboard/styles.89de0b2b206f2f95b5a8.css": "22e4521d92194d2a5affb51800e61534c3fe69ff"
   },
   "navigationUrls": [
     {
