@@ -7,9 +7,10 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { InstrumentPanelComponent } from './instrument-panel/instrument-panel.component';
+import { DimmingMenuComponent } from './dimming-menu/dimming-menu.component';
 
 @NgModule({
-  declarations: [AppComponent, TopNavbarComponent, InstrumentPanelComponent],
+  declarations: [AppComponent, TopNavbarComponent, InstrumentPanelComponent, DimmingMenuComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

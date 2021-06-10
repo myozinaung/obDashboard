@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --selected-label-color: #000000;
+  --selected-tab-color: #b9b9b9;
+  --hover-color: #b9b9b9;
+  --tab-boder-radius: 8px;
+}
+
+// *,
+// *:after,
+// *:before {
+//   box-sizing: border-box;
+// }
+
+*:before,
+*:after {
+  content: "";
+  position: absolute;
+}
+
+.container {
+  position: absolute;
+  /* left: 1000px; */
+  top: 65px;
+  right: 10px;
+  bottom: 0;
+  width: 260px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--container-background-color);
+  box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
+    0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
+    0 3.4px 28.2px rgba(0, 0, 0, 0.03), 0 6.3px 54.4px rgba(0, 0, 0, 0.047),
+    0 15px 137px rgba(0, 0, 0, 0.07);
+  padding: 1rem;
+  border-radius: 0px 0px 8px 8px;
+  /* transform: translateX(400%); */
+}
+
+// Auto Brightness
+.toggleContainer {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--container-backdrop-color);
+  box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
+    0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
+    0 3.4px 28.2px rgba(0, 0, 0, 0.03), 0 6.3px 54.4px rgba(0, 0, 0, 0.047),
+    0 15px 137px rgba(0, 0, 0, 0.07);
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 5px;
+}
+
+.toggleName {
+  font-size: 1.5em;
+  color: var(--font-color);
+  font-family: "Open Sans", sans-serif;
+  margin: 10px;
+}
+
+/* toggle css */
+.toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+/* Hide default HTML checkbox */
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: gray;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+
+  border-radius: 50px; /* background pill radius */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 110%;
+  width: 60%;
+  left: 0px;
+  bottom: 4px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  box-shadow: 5px 5px 15px #2020203d;
+  background: white;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #28f321;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 3px #28f321;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(75%);
+  -ms-transform: translateX(75%);
+  transform: translateX(75%);
+  background: white;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//  Dimming Modes
+.tabs {
+  display: flex;
+  background-color: var(--container-backdrop-color);
+  box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
+    0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
+    0 3.4px 28.2px rgba(0, 0, 0, 0.03), 0 6.3px 54.4px rgba(0, 0, 0, 0.047),
+    0 15px 137px rgba(0, 0, 0, 0.07);
+  padding: 0.5rem;
+  border-radius: 8px;
+  border-radius: 8px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 550;
+  color: var(--font-color);
+  border-radius: 33%;
+  box-shadow: 0 0 2px 0 rgba(24, 94, 224, 0.15),
+    0 6px 12px 0 rgba(24, 94, 224, 0.15);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease-in;
+  z-index: 3;
+}
+
+.tab:hover {
+  border-radius: 33%;
+  transform: scale(1.05);
+  z-index: 5;
+  transition: 0.25s ease-out;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: black;
+  opacity: 0.4;
+}
+
+input[type="radio"]:checked + label {
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input[type="radio"]:checked + label > .icon {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: 0.25s ease-out;
+}
+
+input[id="radio-bright"]:checked ~ .glider {
+  transform: translateX(0);
+}
+
+input[id="radio-day"]:checked ~ .glider {
+  transform: translateX(100%);
+}
+
+input[id="radio-dusk"]:checked ~ .glider {
+  transform: translateX(200%);
+}
+
+input[id="radio-night"]:checked ~ .glider {
+  transform: translateX(300%);
+}
+
+.glider {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background-color: var(--container-background-color);
+  z-index: 1;
+  border-radius: 33%;
+  transition: 0.25s ease-in-out;
+}

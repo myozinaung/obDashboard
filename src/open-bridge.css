@@ -2428,7 +2428,7 @@ html {
   --element-active-inverted-color: rgb(255, 255, 255);
   --element-neutral-inverted-color: rgba(255, 255, 255, 0.6);
   --element-disabled-inverted-color: rgba(255, 255, 255, 0.3);
-  --container-backdrop-color: rgb(255, 255, 255);
+  --container-backdrop-color: rgb(230, 230, 230);
   --container-section-color: rgb(240, 240, 240);
   --container-background-color: rgb(255, 255, 255);
   --container-global-color: rgb(255, 255, 255);
