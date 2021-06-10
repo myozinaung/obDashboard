@@ -1,0 +1,81 @@
+{
+  "configVersion": 1,
+  "timestamp": 1623348598614,
+  "index": "/obDashboard/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/obDashboard/favicon.ico",
+        "/obDashboard/index.html",
+        "/obDashboard/main.f16fa5d157b9320516f6.js",
+        "/obDashboard/manifest.webmanifest",
+        "/obDashboard/polyfills.4a7730727dd548569225.js",
+        "/obDashboard/runtime.0b8dedb9f86f4b7aa0f8.js",
+        "/obDashboard/styles.31d6cfe0d16ae931b73c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/obDashboard/assets/icons/icon-128x128.png",
+        "/obDashboard/assets/icons/icon-144x144.png",
+        "/obDashboard/assets/icons/icon-152x152.png",
+        "/obDashboard/assets/icons/icon-192x192.png",
+        "/obDashboard/assets/icons/icon-384x384.png",
+        "/obDashboard/assets/icons/icon-512x512.png",
+        "/obDashboard/assets/icons/icon-72x72.png",
+        "/obDashboard/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/obDashboard/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/obDashboard/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/obDashboard/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/obDashboard/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/obDashboard/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/obDashboard/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/obDashboard/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/obDashboard/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/obDashboard/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/obDashboard/index.html": "47d229e275ffd9195fb8d7ed26d360cb5b648b4f",
+    "/obDashboard/main.f16fa5d157b9320516f6.js": "cf6b26c57d1a065ca446be751a587b56fbeb33ee",
+    "/obDashboard/manifest.webmanifest": "b28965cf4a92493afa07d60c34e6f7d407ce066c",
+    "/obDashboard/polyfills.4a7730727dd548569225.js": "69d5be86c33ba0cff84f469a1821d5359eb11946",
+    "/obDashboard/runtime.0b8dedb9f86f4b7aa0f8.js": "7d340400c043eabfde972bb63adc57848d79f8ff",
+    "/obDashboard/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
