@@ -12,25 +12,45 @@
 
   <!-- DIMMING MODES TABS-->
   <div class="tabs">
-    <input type="radio" id="radio-bright" name="dimming-modes" />
+    <input
+      type="radio"
+      id="radio-bright"
+      name="dimming-modes"
+      (click)="setTheme('bright')"
+    />
     <label class="tab" for="radio-bright">
       <img src="/assets/icons/bright-icon.svg" class="icon" />
       Bright
     </label>
 
-    <input type="radio" id="radio-day" name="dimming-modes" />
+    <input
+      type="radio"
+      id="radio-day"
+      name="dimming-modes"
+      (click)="setTheme('day')"
+    />
     <label class="tab" for="radio-day">
       <img src="/assets/icons/day-icon.svg" class="icon" />
       Day
     </label>
 
-    <input type="radio" id="radio-dusk" name="dimming-modes" />
+    <input
+      type="radio"
+      id="radio-dusk"
+      name="dimming-modes"
+      (click)="setTheme('dusk')"
+    />
     <label class="tab" for="radio-dusk">
       <img src="/assets/icons/dusk-icon.svg" class="icon" />
       Dusk
     </label>
 
-    <input type="radio" id="radio-night" name="dimming-modes" />
+    <input
+      type="radio"
+      id="radio-night"
+      name="dimming-modes"
+      (click)="setTheme('night')"
+    />
     <label class="tab" for="radio-night">
       <img src="/assets/icons/night-icon.svg" class="icon" />
       Night
