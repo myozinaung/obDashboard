@@ -3,8 +3,8 @@
   <div class="card-instrument card-2x2">
     <ob-hdg-medium
       class="container-2x2"
-      heading="60"
-      northUp="true"
+      [heading]="hdgHeading"
+      [northUp]="hdgNorthUp"
     ></ob-hdg-medium>
     <div class="card-title title-medium">HDG Medium</div>
   </div>
@@ -12,15 +12,19 @@
   <div class="card-instrument card-4x4">
     <ob-hdg-large
       class="container-4x4"
-      heading="60"
-      courseOverGround="30"
-      northUp="true"
+      [heading]="hdgHeading"
+      [courseOverGround]="hdgCourseOverGround"
+      [northUp]="hdgNorthUp"
     ></ob-hdg-large>
     <div class="card-title title-large">HDG Large</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-hdg-small class="container-1x1"></ob-hdg-small>
+    <ob-hdg-small
+      class="container-1x1"
+      [heading]="hdgHeading"
+      [northUp]="hdgNorthUp"
+    ></ob-hdg-small>
     <div class="card-title title-small">HDG Small</div>
   </div>
 
@@ -28,48 +32,69 @@
   <div class="card-instrument card-2x2">
     <ob-rudder-medium
       class="container-2x2"
-      rudderAngle="25"
-      rudderSetPointAngle="35"
-      clipAngle="60"
-      showPortStarboard="true"
-      showSetPoint="true"
+      [rudderAngle]="rudderAngle"
+      [rudderSetPointAngle]="rudderSetPointAngle"
+      [clipAngle]="rudderClipAngle"
+      [showPortStarboard]="rudderShowPortStarboard"
+      [showSetPoint]="rudderShowSetPoint"
     ></ob-rudder-medium>
     <div class="card-title title-medium">Rudder Medium</div>
   </div>
 
   <div class="card-instrument card-4x4">
-    <ob-rudder-large class="container-4x4"></ob-rudder-large>
+    <ob-rudder-large
+      class="container-4x4"
+      [rudderAngle]="rudderAngle"
+      [rudderSetPointAngle]="rudderSetPointAngle"
+      [clipAngle]="rudderClipAngle"
+      [showPortStarboard]="rudderShowPortStarboard"
+      [showSetPoint]="rudderShowSetPoint"
+    ></ob-rudder-large>
     <div class="card-title title-large">Rudder Large</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-rudder-small class="container-1x1"></ob-rudder-small>
+    <ob-rudder-small
+      class="container-1x1"
+      [rudderAngle]="rudderAngle"
+      [rudderSetPointAngle]="rudderSetPointAngle"
+      [clipAngle]="rudderClipAngle"
+      [showPortStarboard]="rudderShowPortStarboard"
+    ></ob-rudder-small>
     <div class="card-title title-small">Rudder Small</div>
   </div>
 
   <!-- AZIMUTH -->
   <div class="card-instrument card-2x2">
-    <ob-azimuth-medium class="container-2x2"></ob-azimuth-medium>
+    <ob-azimuth-medium
+      class="container-2x2"
+      [angle]="azimuthAngle"
+      [targetAngle]="azimuthTargetAngle"
+      [value]="azimuthValue"
+      [target]="azimuthTarget"
+    ></ob-azimuth-medium>
     <div class="card-title title-medium">Azimuth Medium</div>
   </div>
 
   <div class="card-instrument card-4x4">
     <ob-azimuth-large
       class="container-4x4"
-      target="80"
-      value="70"
-      angle="45"
-      targetAngle="60"
-      thrusterWidth="REGULAR"
-      showPortStarboard="true"
-      showSetPointValue="true"
-      showSetPointAngle="true"
+      [angle]="azimuthAngle"
+      [targetAngle]="azimuthTargetAngle"
+      [value]="azimuthValue"
+      [target]="azimuthTarget"
     ></ob-azimuth-large>
     <div class="card-title title-large">Azimuth Large</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-azimuth-small class="container-1x1"></ob-azimuth-small>
+    <ob-azimuth-small
+      class="container-1x1"
+      [angle]="azimuthAngle"
+      [targetAngle]="azimuthTargetAngle"
+      [value]="azimuthValue"
+      [target]="azimuthTarget"
+    ></ob-azimuth-small>
     <div class="card-title title-small">Azimuth Small</div>
   </div>
 
@@ -77,17 +102,27 @@
   <div class="card-instrument card-1x2">
     <ob-tunnel-thruster-medium
       class="container-1x2"
+      [target]="tunnelThrusterTarget"
+      [value]="tunnelThrusterValue"
     ></ob-tunnel-thruster-medium>
     <div class="card-title title-medium">Thruster Medium</div>
   </div>
 
   <div class="card-instrument card-1x4">
-    <ob-tunnel-thruster-large class="container-1x4"></ob-tunnel-thruster-large>
+    <ob-tunnel-thruster-large
+      class="container-1x4"
+      [target]="tunnelThrusterTarget"
+      [value]="tunnelThrusterValue"
+    ></ob-tunnel-thruster-large>
     <div class="card-title title-large">Thruster Large</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-tunnel-thruster-small class="container-1x1"></ob-tunnel-thruster-small>
+    <ob-tunnel-thruster-small
+      class="container-1x1"
+      [target]="tunnelThrusterTarget"
+      [value]="tunnelThrusterValue"
+    ></ob-tunnel-thruster-small>
     <div class="card-title title-small">Thruster Small</div>
   </div>
 
@@ -95,24 +130,42 @@
   <div class="card-instrument card-2x2">
     <ob-pitch-roll-medium
       class="container-2x2"
-      pitch="1"
-      lowerPitch="-6"
-      upperPitch="6"
-      roll="4"
-      lowerRoll="-10"
-      upperRoll="10"
-      scale="5"
+      [pitch]="pitch"
+      [lowerPitch]="lowerPitch"
+      [upperPitch]="upperPitch"
+      [roll]="roll"
+      [lowerRoll]="lowerRoll"
+      [upperRoll]="upperRoll"
+      [scale]="pitchRollScale"
     ></ob-pitch-roll-medium>
     <div class="card-title title-medium">Pitch & Roll Medium</div>
   </div>
 
   <div class="card-instrument card-4x4">
-    <ob-pitch-roll-large class="container-4x4"></ob-pitch-roll-large>
+    <ob-pitch-roll-large
+      class="container-4x4"
+      [pitch]="pitch"
+      [lowerPitch]="lowerPitch"
+      [upperPitch]="upperPitch"
+      [roll]="roll"
+      [lowerRoll]="lowerRoll"
+      [upperRoll]="upperRoll"
+      [scale]="pitchRollScale"
+    ></ob-pitch-roll-large>
     <div class="card-title title-large">Pitch & Roll Large</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-pitch-roll-small class="container-1x1"></ob-pitch-roll-small>
+    <ob-pitch-roll-small
+      class="container-1x1"
+      [pitch]="pitch"
+      [lowerPitch]="lowerPitch"
+      [upperPitch]="upperPitch"
+      [roll]="roll"
+      [lowerRoll]="lowerRoll"
+      [upperRoll]="upperRoll"
+      [scale]="pitchRollScale"
+    ></ob-pitch-roll-small>
     <div class="card-title title-small">Pitch & Roll Small</div>
   </div>
 
@@ -134,49 +187,87 @@
 
   <!-- ROT -->
   <div class="card-instrument card-2x2">
-    <ob-rot-circle-medium class="container-2x2"></ob-rot-circle-medium>
+    <ob-rot-circle-medium
+      class="container-2x2"
+      [rateOfTurn]="rateOfTurn"
+    ></ob-rot-circle-medium>
     <div class="card-title title-medium">ROT Medium</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-rot-circle-small class="container-1x1"></ob-rot-circle-small>
+    <ob-rot-circle-small
+      class="container-1x1"
+      [rateOfTurn]="rateOfTurn"
+    ></ob-rot-circle-small>
     <div class="card-title title-small">ROT Small</div>
   </div>
 
   <div class="card-instrument card-1x2">
-    <ob-rot-flat-medium class="container-1x2"></ob-rot-flat-medium>
+    <ob-rot-flat-medium
+      class="container-1x2"
+      [rateOfTurn]="rateOfTurn"
+    ></ob-rot-flat-medium>
     <div class="card-title title-medium">ROT Medium</div>
   </div>
 
   <div class="card-instrument card-1x4">
-    <ob-rot-flat-large class="container-1x4"></ob-rot-flat-large>
+    <ob-rot-flat-large
+      class="container-1x4"
+      [rateOfTurn]="rateOfTurn"
+    ></ob-rot-flat-large>
     <div class="card-title title-large">ROT Large</div>
   </div>
 
   <div class="card-instrument card-1x1">
-    <ob-rot-flat-small class="container-1x1"></ob-rot-flat-small>
+    <ob-rot-flat-small
+      class="container-1x1"
+      [rateOfTurn]="rateOfTurn"
+    ></ob-rot-flat-small>
     <div class="card-title title-small">ROT Small</div>
   </div>
 
   <!-- SPEEDOMETER -->
   <div class="card-instrument card-2x2">
-    <ob-speedometer-medium class="container-2x2"></ob-speedometer-medium>
+    <ob-speedometer-medium
+      class="container-2x2"
+      [value]="speedometerValue"
+    ></ob-speedometer-medium>
     <div class="card-title title-medium">Speedometer Medium</div>
   </div>
 
   <!-- MAIN ENGINE -->
   <div class="card-instrument card-2x2">
-    <ob-main-engine-medium class="container-2x1"></ob-main-engine-medium>
+    <ob-main-engine-medium
+      class="container-2x1"
+      [target]="mainEngineTarget"
+      [value]="mainEngineValue"
+    ></ob-main-engine-medium>
     <div class="card-title title-medium">Engine Medium</div>
   </div>
 
   <div class="card-instrument card-4x2">
-    <ob-main-engine-large class="container-4x1"></ob-main-engine-large>
+    <ob-main-engine-large
+      class="container-4x1"
+      [target]="mainEngineTarget"
+      [value]="mainEngineValue"
+    ></ob-main-engine-large>
     <div class="card-title title-large">Engine Large</div>
   </div>
 
   <div class="card-instrument card-2x1">
-    <ob-main-engine-small class="container-2x1"></ob-main-engine-small>
+    <ob-main-engine-small
+      class="container-2x1"
+      [target]="mainEngineTarget"
+      [value]="mainEngineValue"
+    ></ob-main-engine-small>
     <div class="card-title title-small">Engine Small</div>
   </div>
+
+  <!-- TEST -->
+  <div class="card-instrument card-2x2">
+    <ob-compass-circle-large class="container-2x2"></ob-compass-circle-large>
+    <div class="card-title title-medium">Compass Medium</div>
+  </div>
+
+  <!-- end of instruments -->
 </div>
