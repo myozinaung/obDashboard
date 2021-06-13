@@ -5,7 +5,7 @@
 
 .instrument-grid {
   display: grid;
-  gap: 1rem;
+  gap: 0.5vw;
   /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
   grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
   /* grid-auto-rows: 150px; */
@@ -13,7 +13,7 @@
 
 .card-instrument {
   background-color: var(--container-background-color);
-  border-radius: 30px;
+  border-radius: 2vw;
 
   box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
     0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),

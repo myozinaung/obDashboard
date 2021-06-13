@@ -111,7 +111,7 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
   box-shadow: 5px 5px 15px #2020203d;
-  background: white;
+  background: var(--container-background-color);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -119,18 +119,18 @@
 }
 
 input:checked + .slider {
-  background-color: #28f321;
+  background-color: var(--font-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 3px #28f321;
+  box-shadow: 0 0 3px var(--font-color);
 }
 
 input:checked + .slider:before {
   -webkit-transform: translateX(75%);
   -ms-transform: translateX(75%);
   transform: translateX(75%);
-  background: white;
+  background: var(--container-background-color);
   background-repeat: no-repeat;
   background-position: center;
 }
