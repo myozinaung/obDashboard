@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1623599529709,
+  "timestamp": 1623600225031,
   "index": "/obDashboard/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/obDashboard/favicon.ico",
         "/obDashboard/index.html",
-        "/obDashboard/main.573584ea9b393320a9ea.js",
+        "/obDashboard/main.563b4fcb463886e57446.js",
         "/obDashboard/manifest.webmanifest",
         "/obDashboard/polyfills.4a7730727dd548569225.js",
         "/obDashboard/runtime.0b8dedb9f86f4b7aa0f8.js",
-        "/obDashboard/styles.cf1510a8507bcb87706b.css"
+        "/obDashboard/styles.7b02450846a6e8560b48.css"
       ],
       "patterns": []
     },
@@ -70,12 +70,12 @@
     "/obDashboard/assets/icons/night-icon.svg": "399b48f48941aeac8f4a81e9f5fc3afcfef621ac",
     "/obDashboard/assets/icons/user-icon.svg": "82a4fab0eaeb8b88562b23a3ecc04af356c40c31",
     "/obDashboard/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/obDashboard/index.html": "945b03cc6e0b8055d50519e8678b2c05d65b8562",
-    "/obDashboard/main.573584ea9b393320a9ea.js": "08fa6f5a069a93c2e43e5904a99a2d6e556a7f82",
+    "/obDashboard/index.html": "7f76867ac193de16b36a0f312dd8ed30771df86b",
+    "/obDashboard/main.563b4fcb463886e57446.js": "e50b774589287564474090d87886834aab20bda0",
     "/obDashboard/manifest.webmanifest": "fc75bf44dcec874945af0f885613766807f78af9",
     "/obDashboard/polyfills.4a7730727dd548569225.js": "69d5be86c33ba0cff84f469a1821d5359eb11946",
     "/obDashboard/runtime.0b8dedb9f86f4b7aa0f8.js": "7d340400c043eabfde972bb63adc57848d79f8ff",
-    "/obDashboard/styles.cf1510a8507bcb87706b.css": "468240a9888d166b1136526279424b420b498d9d"
+    "/obDashboard/styles.7b02450846a6e8560b48.css": "6363dc36c0b0b9a87b2be972e93417811dc027a7"
   },
   "navigationUrls": [
     {
