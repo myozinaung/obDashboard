@@ -1,6 +1,9 @@
-<app-top-navbar></app-top-navbar>
-<app-dimming-menu></app-dimming-menu>
+<app-top-navbar
+  (onDimmingClick)="toggleDimming = !toggleDimming"
+></app-top-navbar>
+<app-dimming-menu *ngIf="toggleDimming"></app-dimming-menu>
 
-<app-instrument-panel></app-instrument-panel>
+<!-- <app-instrument-panel></app-instrument-panel> -->
+<app-instruments-medium></app-instruments-medium>
 
 <router-outlet></router-outlet>

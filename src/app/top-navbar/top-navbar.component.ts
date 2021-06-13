@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-top-navbar',
   templateUrl: './top-navbar.component.html',
-  styleUrls: ['./top-navbar.component.scss']
+  styleUrls: ['./top-navbar.component.scss'],
 })
 export class TopNavbarComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+  @Output() onDimmingClick = new EventEmitter<boolean>();
+
+  dimmingClick() {
+    this.onDimmingClick.emit(true);
   }
-
 }

@@ -8,9 +8,10 @@ import { environment } from '../environments/environment';
 import { TopNavbarComponent } from './top-navbar/top-navbar.component';
 import { InstrumentPanelComponent } from './instrument-panel/instrument-panel.component';
 import { DimmingMenuComponent } from './dimming-menu/dimming-menu.component';
+import { InstrumentsMediumComponent } from './instruments-medium/instruments-medium.component';
 
 @NgModule({
-  declarations: [AppComponent, TopNavbarComponent, InstrumentPanelComponent, DimmingMenuComponent],
+  declarations: [AppComponent, TopNavbarComponent, InstrumentPanelComponent, DimmingMenuComponent, InstrumentsMediumComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
